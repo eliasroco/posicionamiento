@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banderas</title>
+    
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 600px;
+    border: 2px solid red;
+    height: 400px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 35px 0;
+}
+
+.container__bandera {
+    width: 250px;
+    height: 150px;
+    border: 2px solid black;
+}
+
+.bandera {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.espana {
+    background-color: yellow;
+}
+
+.espana div {
+    background-color: red;
+    height: 40px;
+    width: 100%;
+    position: absolute;
+}
+
+.bandera__espana--red-top {
+    bottom: 0;
+}
+.bandera__espana--red-bottom {
+    top: 0;
+}
+
+.bandera__dinamarca--square-1 {
+    height: 65px;
+    width: 65px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bandera__dinamarca--square-2 {
+    height: 65px;
+    width: 65px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.bandera__dinamarca--rectangle-1 {
+    height: 65px;
+    width: 165px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.bandera__dinamarca--rectangle-2 {
+    height: 65px;
+    width: 165px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.emiratos .red {
+    background-color: red;
+    height: 100%;
+    width: 60px;
+    position: absolute;
+    left: 0;
+}
+.emiratos .green {
+    background-color: rgb(50, 150, 50);
+    width: 186px;
+    height: 49px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.emiratos .black {
+    background-color: black;
+    width: 186px;
+    height: 49px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.japon .circle {
+    border-radius: 50%;
+    position: absolute;
+    background-color: red;
+    width: 70px;
+    height: 70px;
+    left: 88px;
+    top: 38px;
+}
+
+    </style>
+    
+</head>
+<body>
+    <section class="container">
+        <div class="row">
+            <div class="container__bandera">
+                <div class="bandera espana">
+                    <div class="bandera__espana--red-top"></div>
+                    <div class="bandera__espana--red-bottom"></div>
+                </div>
+                <p>España</p>
+            </div>
+            <div class="container__bandera">
+                <div class="bandera dinamarca">
+                    <div class="bandera__dinamarca--square-1"></div>
+                    <div class="bandera__dinamarca--square-2"></div>
+                    <div class="bandera__dinamarca--rectangle-1"></div>
+                    <div class="bandera__dinamarca--rectangle-2"></div>
+                </div>
+                <p>Dinamarca</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container__bandera">
+                <div class="bandera emiratos">
+                    <div class="red"></div>
+                    <div class="green"></div>
+                    <div class="black"></div>
+                </div>
+                <p>Emiratos Arabes</p>
+            </div>
+            <div class="container__bandera">
+                <div class="bandera japon">
+                    <div class="circle"></div>
+                </div>
+                <p>Japon</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
